@@ -1,6 +1,6 @@
 let idNumber;
 let idNumberShort;
-let urlBeginning = "http://flightrising.com/main.php?dragon=";
+let urlBeginning = "https://flightrising.com/main.php?dragon=";
 let url;
 
 getRandom();
@@ -47,35 +47,35 @@ function getId() {
 }
 
 function getFull350() {
-	let imgFull350 = "http://www1.flightrising.com/rendern/350/" + idNumberShort + "/" + idNumber + "_350.png";
+	let imgFull350 = "https://www1.flightrising.com/rendern/350/" + idNumberShort + "/" + idNumber + "_350.png";
 	document.getElementById("dragon-img-full350").src = imgFull350;
 	document.getElementById("dragon-img-full350-url").value = imgFull350;
 	document.getElementById("dragon-img-full350-linked-bbcode").value = "[url=" + url + "][img]" + imgFull350 + "[/img][/url]";
 }
 
 function getFull100() {
-	let imgFull100 = "http://www1.flightrising.com/rendern/avatars/" + idNumberShort + "/" + idNumber + ".png";
+	let imgFull100 = "https://www1.flightrising.com/rendern/avatars/" + idNumberShort + "/" + idNumber + ".png";
 	document.getElementById("dragon-img-full100").src = imgFull100;
 	document.getElementById("dragon-img-full100-url").value = imgFull100;
 	document.getElementById("dragon-img-full100-linked-bbcode").value = "[url=" + url + "][img]" + imgFull100 + "[/img][/url]";
 }
 
 function getAvatar() {
-	let imgAvatar = "http://www1.flightrising.com/rendern/portraits/" + idNumberShort + "/" + idNumber + "p.png";
+	let imgAvatar = "https://www1.flightrising.com/rendern/portraits/" + idNumberShort + "/" + idNumber + "p.png";
 	document.getElementById("dragon-img-avatar").src = imgAvatar;
 	document.getElementById("dragon-img-avatar-url").value = imgAvatar;
 	document.getElementById("dragon-img-avatar-linked-bbcode").value = "[url=" + url + "][img]" + imgAvatar + "[/img][/url]";
 }
 
 function getBattleSprite() {
-	let imgBattleSprite = "http://www1.flightrising.com/rendern/coliseum/battlesprites/" + idNumberShort + "/" + idNumber + ".png";
+	let imgBattleSprite = "https://www1.flightrising.com/rendern/coliseum/battlesprites/" + idNumberShort + "/" + idNumber + ".png";
 	document.getElementById("dragon-img-battlesprite").src = imgBattleSprite;
 	document.getElementById("dragon-img-battlesprite-url").value = imgBattleSprite;
 	document.getElementById("dragon-img-battlesprite-linked-bbcode").value = "[url=" + url + "][img]" + imgBattleSprite + "[/img][/url]";
 }
 
 function getColiPortrait() {
-	let imgColiPortrait = "http://www1.flightrising.com/rendern/coliseum/portraits/" + idNumberShort + "/" + idNumber + ".png";
+	let imgColiPortrait = "https://www1.flightrising.com/rendern/coliseum/portraits/" + idNumberShort + "/" + idNumber + ".png";
 	document.getElementById("dragon-img-coliportrait").src = imgColiPortrait;
 	document.getElementById("dragon-img-coliportrait-url").value = imgColiPortrait;
 	document.getElementById("dragon-img-coliportrait-linked-bbcode").value = "[url=" + url + "][img]" + imgColiPortrait + "[/img][/url]";
