@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: system-ui, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+}
+
+.background {
+	background-image: url("https://www1.flightrising.com/static/cms/scene/45956.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	/*background-position: 85% top;*/
+	background-position: left;
+	z-index: -1;
+	opacity: 0.25;
+	display: inline;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+}
+
+.wrapper {
+	/*background-color: #ececec;*/
+	background-color: #f8f7f6;
+	max-width: 700px;
+	margin: auto;
+	padding: 1rem 4rem;
+	width: 80%;
+}
+
+.wrapper h3 {
+	margin: 0rem 0rem 0.5rem 0rem;
+}
+
+header {
+	background-color: #dad6c8 !important;
+}
+
+button {
+	cursor: pointer;
+}
+
+#idForm {
+	margin-bottom: 2rem;
+}
+
+#idForm *, h3 {
+	font-size: 1.5rem;
+}
+
+#idForm input {
+	max-width: 200px;
+}
+
+#idForm button {
+	background-color: #731d08;
+	color: #ffffff;
+	border-radius: 5px;
+	border: 0px;
+	padding: 3px 10px;
+	transition: background-color 0.1s;
+}
+
+#idForm button:hover {
+	background-color: #4c1407;
+}
+
+#error {
+	font-size: 1rem;
+	color: #731d08;
+}
+
+.section {
+	margin: 0rem 0rem 2.5rem 0rem;
+}
+
+.section a {
+	margin-right:1rem;
+}
+
+.info input {
+	margin: 0.2rem 0rem;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip button {
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.tooltip .tooltip-text {
+	font-size: 1rem !important;
+	width: 170px;
+	text-align: left;
+	color:#000000;
+	background-color:#ffffff;
+	border:1px solid #888888;
+	box-shadow:rgba(0, 0, 0, 0.5) 0px 0px 5px;
+	border-radius:5px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	top: calc(100% + 0.5rem);
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+
+.tooltip:hover .tooltip-text {
+	visibility: visible;
+	opacity: 1;
+}
+
+footer {
+	margin: 6rem 0rem 0rem 0rem;
+	font-size: 0.75rem;
+	background-color: #dad6c8 !important;
+}
+
+footer a {
+	color: #731d08;
+	text-decoration: none;
+	transition: color 0.1s;
+}
+
+footer a:hover {
+	color: #000000;
+}
+
+@media screen and (max-width: 700px) {
+	.wrapper {
+		width: 100%;
+		padding: 1rem 2rem;
+	}
+
+	#dragonImgFull350 {
+		width: 100%;
+		max-width: 350px;
+	}
+
+	.info .tooltip .tooltip-text {
+		left: -150px;
+	}
+}

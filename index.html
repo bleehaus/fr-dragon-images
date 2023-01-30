@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta id="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FR Dragon Images</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="background"></div>
+  <header class="wrapper">
+    <h1>Flight Rising Dragon Image Grabber</h1>
+    <form id="idForm">
+      <div class="form-uid">
+        <label for="id-number">Dragon ID:</label>
+        <input id="id-number" type="number"></input>
+        <button id="submit-button" type="button" onclick="getAll()" enterkeyhint="send">Submit</button>
+        <p id="error"></p>
+      </div>
+    </form>
+  </header>
+
+  <main class="wrapper">
+    <h3>Fullbody</h3>
+    <div class ="section" id="full350">
+      <div class="tooltip">
+        <a class="dragon-url" href="" target="_blank" rel="noopener"><img id="dragon-img-full350">
+          <span class="tooltip-text">Go to dragon</span>
+        </a>
+      </div>
+      <div class="info">
+        <label for="dragon-img-full350-url">Image URL:</label>
+        <input type="text" id="dragon-img-full350-url" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-full350-url')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+        <br>
+        <label for="dragon-img-full350-linked-bbcode">BBCode Widget:</label>
+        <input type="text" id="dragon-img-full350-linked-bbcode" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-full350-linked-bbcode')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <h3>Avatar</h3>
+    <div class="section" id="avatar">
+      <div class="tooltip">
+        <a class="dragon-url" href="" target="_blank" rel="noopener"><img id="dragon-img-avatar">
+          <span class="tooltip-text">Go to dragon</span>
+        </a>
+      </div>
+      <div class="info">
+        <label for="dragon-img-avatar-url">Image URL:</label>
+        <input type="text" id="dragon-img-avatar-url" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-avatar-url')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+        <br>
+        <label for="dragon-img-avatar-linked-bbcode">BBCode Widget:</label>
+        <input type="text" id="dragon-img-avatar-linked-bbcode" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-avatar-linked-bbcode')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <h3>Small Fullbody</h3>
+    <div class ="section" id="full100">
+      <div class="tooltip">
+        <a class="dragon-url" href="" target="_blank" rel="noopener"><img id="dragon-img-full100">
+          <span class="tooltip-text">Go to dragon</span>
+        </a>
+      </div>
+      <div class="info">
+        <label for="dragon-img-full100-url">Image URL:</label>
+        <input type="text" id="dragon-img-full100-url" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-full100-url')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+        <br>
+        <label for="dragon-img-full100-linked-bbcode">BBCode Widget:</label>
+        <input type="text" id="dragon-img-full100-linked-bbcode" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-full100-linked-bbcode')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <h3>Coliseum Portrait</h3>
+    <div class="section" id="coli-portrait">
+      <div class="tooltip">
+        <a class="dragon-url" href="" target="_blank" rel="noopener"><img id="dragon-img-coliportrait">
+          <span class="tooltip-text">Go to dragon</span>
+        </a>
+      </div>
+      <div class="info">
+        <label for="dragon-img-coliportrait-url">Image URL:</label>
+        <input type="text" id="dragon-img-coliportrait-url" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-coliportrait-url')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+        <br>
+        <label for="dragon-img-coliportrait-linked-bbcode">BBCode Widget:</label>
+        <input type="text" id="dragon-img-coliportrait-linked-bbcode" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-coliportrait-linked-bbcode')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <h3>Coliseum Battle Sprite</h3>
+    <div class="section" id="battlesprite">
+      <div class="tooltip">
+        <a class="dragon-url" href="" target="_blank" rel="noopener"><img id="dragon-img-battlesprite">
+          <span class="tooltip-text">Go to dragon</span>
+        </a>
+      </div>
+      <div class="info">
+        <label for="dragon-img-battlesprite-url">Image URL:</label>
+        <input type="text" id="dragon-img-battlesprite-url" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-battlesprite-url')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+        <br>
+        <label for="dragon-img-battlesprite-linked-bbcode">BBCode Widget:</label>
+        <input type="text" id="dragon-img-battlesprite-linked-bbcode" class="copyText"></input>
+        <div class="tooltip">
+          <button onclick="copy('dragon-img-battlesprite-linked-bbcode')">
+            <span class="tooltip-text">Copy to clipboard</span>
+            <img src="https://www1.flightrising.com/static/layout/copy.png">
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="wrapper">
+    <p>
+      This is a <a href="https://www1.flightrising.com/" target="_blank" rel="noopener">Flight Rising</a> helper tool made by <a href="https://www1.flightrising.com/clan-profile/140442" target="_blank" rel="noopener">@fallingjaegers</a>. All images belong to Flight Rising, which is created by Stormlight Workshop, LLC.
+    </p>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</body>
+</html>
