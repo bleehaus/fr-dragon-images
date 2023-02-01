@@ -2,6 +2,7 @@ let idNumber;
 let idNumberShort;
 let urlBeginning = "https://flightrising.com/main.php?dragon=";
 let url;
+let imgFull350;
 
 getRandom();
 getId();
@@ -39,18 +40,40 @@ function getId() {
 	for (i = 0; i < 5; i++) {
 			document.getElementsByClassName("dragon-url")[i].href = url;
 		}
+	checkError();
+}
+
+function checkError() {
 	if (isNaN(idNumber) || !idNumber) {
 		document.getElementById("error").innerHTML = "Please enter a valid dragon ID, numbers only.";
+		console.log("Error detected");
 	} else {
 		document.getElementById("error").innerHTML = "";
+		console.log("No error detected");
+	}
+}
+
+function urlExists(urlCheck) {
+	let https = new XMLHttpRequest();
+	https.open("HEAD", urlCheck, false);
+	https.send();
+	if (http.status != 404) {
+		return true;
+	} else {
+		return false;
 	}
 }
 
 function getFull350() {
-	let imgFull350 = "https://www1.flightrising.com/rendern/350/" + idNumberShort + "/" + idNumber + "_350.png";
+	imgFull350 = "https://www1.flightrising.com/rendern/350/" + idNumberShort + "/" + idNumber + "_350.png";
 	document.getElementById("dragon-img-full350").src = imgFull350;
 	document.getElementById("dragon-img-full350-url").value = imgFull350;
 	document.getElementById("dragon-img-full350-linked-bbcode").value = "[url=" + url + "][img]" + imgFull350 + "[/img][/url]";
+
+	if (document.getElementById("dragon-img-full350").src == "") {
+			document.getElementById("error").innerHTML = "Please enter a valid dragon ID, numbers only.";
+			console.log("Error detected");
+	}
 }
 
 function getFull100() {
